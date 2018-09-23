@@ -7,5 +7,5 @@ Gem::Specification.new do |s|
   s.summary      = 'Ruby macro for defining hook methods to be overriden'
   s.description  = 'Ruby macro for defining hook methods to be overriden'
   s.author       = 'Gregory Kenenitz'
-  s.required_ruby_version = '>= 2.6.0'
+  s.required_ruby_version = '>= 2.5.1'
 end
