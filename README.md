@@ -39,7 +39,18 @@ gem install 'method_template'
 require 'method_template'
 class BaseClass
   extend MethodTemplate
-  hook_methods :method_a, :method_b, :method_c
+  hook_methods :method_a, :method_b, :method_c     #Note that #hook_method may be
+used as well in case there is only one
 end
 ```
+Now, if the required hook methods are not provided in a subclass, an exception is
+raised with a helpful message:
 
+```bash
+class Subclass < BaseClass; end
+=> nil
+s = Subclass.new
+=> #<Subclass:0x00007fbbee1bc608>
+s.method_a
+NotImplementedError (:method_a is a required method of Subclass!)
+```
