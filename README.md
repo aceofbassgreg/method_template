@@ -41,8 +41,7 @@ gem install 'method_template'
 require 'method_template'
 class BaseClass
   extend MethodTemplate
-  hook_methods :method_a, :method_b, :method_c     #Note that #hook_method may be
-used as well in case there is only one method
+  hook_methods :method_a, :method_b, :method_c     #Note that #hook_method may be used as well in case there is only one method
 end
 ```
 Now, if the required hook methods are not provided in a subclass, an exception is
