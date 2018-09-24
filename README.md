@@ -10,18 +10,19 @@ class BaseClass
 
 # code omitted
 
-private def method_a
-  raise NotImplementedError, "You need to implement this method."
-end
+  private def method_a
+    raise NotImplementedError, "You need to implement this method."
+  end
 
-private def method_b
-  raise NotImplementedError, "You need to implement this method."
-end
+  private def method_b
+    raise NotImplementedError, "You need to implement this method."
+  end
 
-private def method_c
-  raise NotImplementedError, "You need to implement this method."
+  private def method_c
+    raise NotImplementedError, "You need to implement this method."
+  end
 end
-```
+  ```
 
 This gem sets out to solve both of those problems. It provides a `hook_methods`
 macro to reduce boilerplate, and by defining `hook_methods` at the top of your
