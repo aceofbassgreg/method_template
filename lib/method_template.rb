@@ -3,7 +3,7 @@ module MethodTemplate
   def hook_methods(*args)
     args.each do |arg|
       define_method(arg) do
-        raise NotImplementedError, "Implement :#{arg} in subclass!"
+        raise NotImplementedError, ":#{arg} is a required method of #{self.class}!"
       end
     end
   end

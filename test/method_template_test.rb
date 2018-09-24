@@ -15,9 +15,11 @@ class MethodTemplateTest < Minitest::Spec
         test_instance = TestClass.new
         method_names.each do |method|
           assert_respond_to test_instance, method
-          assert_raises 'NotImplementedError' do
-            test_instance.method
+          expected_msg = ":#{method} is a required method of MethodTemplateTest::TestClass!"
+          e = assert_raises NotImplementedError do
+            test_instance.send(method)
           end
+          assert_equal expected_msg, e.message
         end
       end
     end
