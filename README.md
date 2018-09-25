@@ -12,15 +12,15 @@ class BaseClass
 
 # code omitted
 
-  private def method_a
+  def method_a
     raise NotImplementedError, "You need to implement this method."
   end
 
-  private def method_b
+  def method_b
     raise NotImplementedError, "You need to implement this method."
   end
 
-  private def method_c
+  def method_c
     raise NotImplementedError, "You need to implement this method."
   end
 end
