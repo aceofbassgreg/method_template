@@ -1,7 +1,7 @@
 ### Purpose
 
 When using any design pattern that requires the definition of hook methods in a
-parent class (such as the [Template Pattern](https://en.wikipedia.org/wiki/Template_method_pattern), it can become tedious to define methods that only raise `NotImplementedError`. Furthermore, as a developer on the project, depending on the size of the parent class from which you are inheriting, it may not be immediately obvious which methods your subclass needs to implemenet.
+parent class (such as the [Template Pattern](https://en.wikipedia.org/wiki/Template_method_pattern)), it can become tedious to define methods that only raise `NotImplementedError`. Furthermore, as a developer on the project, depending on the size of the parent class from which you are inheriting, it may not be immediately obvious which methods your subclass needs to implemenet.
 
 An example:
 
